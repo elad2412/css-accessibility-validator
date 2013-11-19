@@ -1,0 +1,83 @@
+/******CSS Accessibility Validator ******/
+@error-color:red;
+@warning-color:orange;
+@not-recommended:blue;
+
+/**Errors**/
+img{
+	/****no alt or Title****/
+	&:not([alt]),
+	&:not([title]){
+		.animation1; outline-color:@error-color;
+		&:before{position:absolute; content:"Missing Alt/Title";}
+	}
+	/****Empty Alt or Title****/
+	&[alt=""],
+	&[title=""]{
+		.animation1; outline-color:@error-color;
+		&:before{position:absolute; content:"Empty Alt/Title";}
+	}
+}
+/****Empty a tag with no ID****/
+a:empty{.animation1; outline-color:@error-color; min-width:10px; min-height:10px; display:inline-block;}
+a[id]{.no-animation; min-width:0; min-height:0; display:inline;}
+
+
+/****Empty Headers****/
+h1:empty,
+h2:empty,
+h3:empty,
+h4:empty,
+h5:empty,
+h6:empty{
+	.animation1; outline-color:@error-color; min-height:3px;
+	&:before{position:absolute; content:"Empty Header";}
+}
+
+
+/**Warnings**/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+textarea{
+	&:not([placeholder]){
+		.animation1; outline-color:@warning-color;
+		&:before{position:absolute; content:"Recommended to add placeholder";}
+	}
+}
+
+
+/**Not Recommended**/
+iframe{
+	.animation1; outline-color:@not-recommended;
+	&:before{position:absolute; content:"IFRAME content can make accessbility issues";}
+}
+
+
+/*****Css Animation*****/
+.animation1{
+	outline:solid 3px red;
+	opacity:0.2;
+	animation: accessibility-test 1s linear 0s infinite alternate;
+	/* Safari and Chrome: */
+	-webkit-animation: accessibility-test 1s linear 0s infinite alternate;
+}
+@keyframes accessibility-test
+{
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+@-webkit-keyframes accessibility-test
+{
+	from {opacity:0;}
+	to {opacity:1;}
+}
+
+.no-animation{
+	animation:none;
+	-webkit-animation:none;
+}
