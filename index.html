@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/accessabilty.css" media="all" />
+		<style>
+			body{font-family:arial, helvetica, sans-serif;}
+			ul,li{padding:0; margin:0; list-style:none;}
+			a{text-decoration:underline; color:black;}
+			b{color:#810000;}
+			figure{margin:0;}
+			figcaption{font-weight:bold; text-transform:capitalize;}
+
+			main{width:1000px; margin:0 auto;}
+			main section{clear:both;}
+			.error{color:black;}
+			.good{color:green;}
+
+			.list-items li{float:left;margin:0 20px 20px 0;}
+		</style>
+	</head>
+	<body>
+		<main>
+			<section>
+				<h2>Image Checker</h2>
+				<ul class="list-items">
+					<li>
+						<figure>
+							<img src="http://farm8.staticflickr.com/7443/9733944130_bba200844f_m.jpg">
+							<figcaption class="error">missing alt</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="http://farm8.staticflickr.com/7297/9730692099_476b2e943e_m.jpg" alt="" title="">
+							<figcaption class="error">empty alt or title</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="http://farm6.staticflickr.com/5348/9733905010_f3c9c3a202_m.jpg" alt="Paint Shop">
+							<figcaption class="good">Good!</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>Links Checker</h2>
+				<p>Check for links with <b>no text</b>, <b>no ID(anchors)</b> or <b>title attribute</b></p>
+				<ul class="list-items">
+					<li>
+						<a href=""></a>
+					</li>
+					<li>
+						<a href="" title=""></a>
+					</li>
+				</ul>
+			</section>
+		</main>
+	</body>
+</html>

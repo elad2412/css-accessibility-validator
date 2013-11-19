@@ -3,15 +3,15 @@
 @warning-color:orange;
 @not-recommended:blue;
 
+*:after{width:150px; border:solid 1px #ddd; border-radius:10px; background-color:rgba(245,245,245,0.8);}
 /**Errors**/
 img{
-	/****no alt or Title****/
-	&:not([alt]),
-	&:not([title]){
+	/****missing alt****/
+	&:not([alt]){
 		.animation1; outline-color:@error-color;
 		&:before{position:absolute; content:"Missing Alt/Title";}
 	}
-	/****Empty Alt or Title****/
+	/****empty alt or title****/
 	&[alt=""],
 	&[title=""]{
 		.animation1; outline-color:@error-color;
@@ -19,8 +19,15 @@ img{
 	}
 }
 /****Empty a tag with no ID****/
-a:empty{.animation1; outline-color:@error-color; min-width:10px; min-height:10px; display:inline-block;}
-a[id]{.no-animation; min-width:0; min-height:0; display:inline;}
+a:empty{
+	.animation1; outline-color:@error-color; min-width:10px; min-height:10px; display:inline-block; position:relative;
+	&:after{position:absolute; left:10px; top:10px; content:"Empty link tag - isn't anchor(no ID) or missing title attribute or text";}
+}
+a[id],
+a[title]{
+	.no-animation; min-width:0; min-height:0; display:inline;
+	&:after{content:"";}
+}
 
 
 /****Empty Headers****/
@@ -51,7 +58,8 @@ textarea{
 
 
 /**Not Recommended**/
-iframe{
+iframe,
+embed{
 	.animation1; outline-color:@not-recommended;
 	&:before{position:absolute; content:"IFRAME content can make accessbility issues";}
 }
@@ -73,7 +81,7 @@ iframe{
 
 @-webkit-keyframes accessibility-test
 {
-	from {opacity:0;}
+	from {opacity:0.4;}
 	to {opacity:1;}
 }
 
