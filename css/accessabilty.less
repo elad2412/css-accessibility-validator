@@ -10,7 +10,7 @@
 @warning-color:orange;
 @not-recommended:blue;
 
-.message{width:150px; padding:10px; -moz-box-sizing:border-box; box-sizing:border-box; border:solid 1px #ddd; border-radius:10px; background-color:rgba(245,245,245,0.8); color:#000;}
+.message{width:190px; padding:10px; -moz-box-sizing:border-box; box-sizing:border-box; border:solid 1px #ddd; border-radius:10px; background-color:rgba(245,245,245,0.8); color:#000;}
 /**Errors**/
 img{
 	/****missing alt****/
@@ -28,7 +28,7 @@ img{
 /****Empty a tag with no ID****/
 a:empty{
 	.animation1; outline-color:@error-color; min-width:10px; min-height:10px; display:inline-block; position:relative;
-	&:after:extend(.message){position:absolute; right:-160px; top:-20px; content:"Empty link tag - with no anchor(no ID) or title attribute or inner text";}
+	&:after:extend(.message){position:absolute; right:-200px; top:-20px; content:"Empty link tag - with no anchor(no ID) or title attribute or inner text";}
 }
 a[id]:empty,
 a[title]:empty{
@@ -44,8 +44,8 @@ h3:empty,
 h4:empty,
 h5:empty,
 h6:empty{
-	.animation1; outline-color:@error-color; min-height:3px;
-	&:before:extend(.message){position:absolute; content:"Empty Header";}
+	.animation1; outline-color:@error-color; min-height:3px; position:relative;
+	&:before:extend(.message){position:absolute; top:-15px; content:"Empty Header";}
 }
 
 h1[title],
