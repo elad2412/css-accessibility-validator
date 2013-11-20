@@ -1,3 +1,6 @@
+.fc:before, .fc:after { content:""; display:table; }
+.fc:after { clear:both; }
+
 .level1-color{color:red;}
 .level2-color{color:orange;}
 .level3-color{color:blue;}
