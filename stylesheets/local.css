@@ -27,6 +27,6 @@ article li{list-style:none; margin:0; padding:0;}
 
 .image-validator li{width:30%;margin:0 1.5%;}
 
-#main-content .header{}
+#main-content .test{height:27px;}
 #main-content .test:before{content:""; margin-left:0; color:#000;}
 #main-content .test:empty:before{content:"Empty Header"; }
