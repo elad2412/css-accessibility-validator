@@ -214,6 +214,14 @@ object:before {
   position: absolute;
   content: "IFRAME/Flash content can make accessbility issues";
 }
+*[style] {
+  outline: solid 3px red;
+  opacity: 0.2;
+  animation: accessibility-test 0.3s linear 0s infinite alternate;
+  /* Safari and Chrome: */
+  -webkit-animation: accessibility-test 0.3s linear 0s infinite alternate;
+  outline-color: #ff0000;
+}
 /*****Css Animation*****/
 .animation1 {
   outline: solid 3px red;
