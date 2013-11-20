@@ -12,6 +12,8 @@ Refresh your page, and now you can see all the issues that the CSS Accessibility
 ##What Validation the CSS Accessibility Validator Returns?
 The tool checks three levels of Validation: Errors, Warnings and Recommended.
 
+notice: the tool check only stuff we can catch via CSS only.
+
 ##The Validation Levels
 ###Error Level - This is the most critical level of accessibility.
 **At this level we can found:**
