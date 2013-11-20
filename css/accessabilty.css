@@ -43,9 +43,9 @@ img {
 img:not([alt]) {
   outline: solid 3px red;
   opacity: 0.2;
-  animation: accessibility-test 1s linear 0s infinite alternate;
+  animation: accessibility-test 0.5s linear 0s infinite alternate;
   /* Safari and Chrome: */
-  -webkit-animation: accessibility-test 1s linear 0s infinite alternate;
+  -webkit-animation: accessibility-test 0.5s linear 0s infinite alternate;
   outline-color: #ff0000;
 }
 img:not([alt]):before {
@@ -56,9 +56,9 @@ img[alt=""],
 img[title=""] {
   outline: solid 3px red;
   opacity: 0.2;
-  animation: accessibility-test 1s linear 0s infinite alternate;
+  animation: accessibility-test 0.5s linear 0s infinite alternate;
   /* Safari and Chrome: */
-  -webkit-animation: accessibility-test 1s linear 0s infinite alternate;
+  -webkit-animation: accessibility-test 0.5s linear 0s infinite alternate;
   outline-color: #ff0000;
 }
 img[alt=""]:before,
@@ -70,9 +70,9 @@ img[title=""]:before {
 a:empty {
   outline: solid 3px red;
   opacity: 0.2;
-  animation: accessibility-test 1s linear 0s infinite alternate;
+  animation: accessibility-test 0.5s linear 0s infinite alternate;
   /* Safari and Chrome: */
-  -webkit-animation: accessibility-test 1s linear 0s infinite alternate;
+  -webkit-animation: accessibility-test 0.5s linear 0s infinite alternate;
   outline-color: #ff0000;
   min-width: 10px;
   min-height: 10px;
@@ -117,9 +117,9 @@ h5:empty,
 h6:empty {
   outline: solid 3px red;
   opacity: 0.2;
-  animation: accessibility-test 1s linear 0s infinite alternate;
+  animation: accessibility-test 0.5s linear 0s infinite alternate;
   /* Safari and Chrome: */
-  -webkit-animation: accessibility-test 1s linear 0s infinite alternate;
+  -webkit-animation: accessibility-test 0.5s linear 0s infinite alternate;
   outline-color: #ff0000;
   min-height: 3px;
   position: relative;
@@ -173,9 +173,9 @@ input[type="tel"]:not([placeholder]),
 textarea:not([placeholder]) {
   outline: solid 3px red;
   opacity: 0.2;
-  animation: accessibility-test 1s linear 0s infinite alternate;
+  animation: accessibility-test 0.5s linear 0s infinite alternate;
   /* Safari and Chrome: */
-  -webkit-animation: accessibility-test 1s linear 0s infinite alternate;
+  -webkit-animation: accessibility-test 0.5s linear 0s infinite alternate;
   outline-color: #ffa500;
 }
 input[type="text"]:not([placeholder]):before,
@@ -204,9 +204,9 @@ embed,
 object {
   outline: solid 3px red;
   opacity: 0.2;
-  animation: accessibility-test 1s linear 0s infinite alternate;
+  animation: accessibility-test 0.5s linear 0s infinite alternate;
   /* Safari and Chrome: */
-  -webkit-animation: accessibility-test 1s linear 0s infinite alternate;
+  -webkit-animation: accessibility-test 0.5s linear 0s infinite alternate;
   outline-color: #0000ff;
 }
 iframe:before,
@@ -219,13 +219,13 @@ object:before {
 .animation1 {
   outline: solid 3px red;
   opacity: 0.2;
-  animation: accessibility-test 1s linear 0s infinite alternate;
+  animation: accessibility-test 0.5s linear 0s infinite alternate;
   /* Safari and Chrome: */
-  -webkit-animation: accessibility-test 1s linear 0s infinite alternate;
+  -webkit-animation: accessibility-test 0.5s linear 0s infinite alternate;
 }
 @keyframes accessibility-test {
   from {
-    opacity: 0.4;
+    opacity: 0.9;
   }
   to {
     opacity: 1;
@@ -233,7 +233,7 @@ object:before {
 }
 @-webkit-keyframes accessibility-test {
   from {
-    opacity: 0.4;
+    opacity: 0.9;
   }
   to {
     opacity: 1;
