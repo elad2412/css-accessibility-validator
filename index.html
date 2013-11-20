@@ -32,7 +32,26 @@
     <div id="content-wrapper">
       <div class="inner clearfix">
         <section id="main-content">
-        
+        <p>Accessibility CSS Validator is a tool for errors and warnings on web accessibility. The tool checks at three levels.
+	<br>
+	Error Level - This is the most critical level of accessibility.<br>
+	At this level we can found:<br>
+	1. Alternative texts and images<br>
+	2. Tags Links empty without ID or a title attribute<br>
+	3. Empty titles, or titles empty without a title attribute<br>
+	The Error will color in <b>red outline</b>.<br><br>
+	
+	Warning Level - At this level are things which may have accessibility errors.<br>
+	At this level we can found:<br>
+	1. Input text fields without placeholder or without sibling label tag(before) with the attribute for on it<br>
+	
+	Recommended Level - This is the less critical level of accessibility.<br>
+	At this level we can found un-recommended HTML tags as: iframe , flash tags(embed or object)<br>
+	1.Flash HTML isn't accessibility.
+	2.Ifames are half accessibility, if there is a form inside them for example, you can go in but you can't get out of them.
+
+	The Recommended will color in <b>blue outline</b>.<br><br>
+	</p>
       <pre><code>$ cd your_repo_root/repo_name
       $ git fetch origin
       $ git checkout gh-pages
