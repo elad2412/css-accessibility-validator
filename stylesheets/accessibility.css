@@ -122,6 +122,7 @@ h6:empty {
   -webkit-animation: accessibility-test 1s linear 0s infinite alternate;
   outline-color: #ff0000;
   min-height: 3px;
+  position: relative;
 }
 h1:empty:before,
 h2:empty:before,
@@ -130,6 +131,7 @@ h4:empty:before,
 h5:empty:before,
 h6:empty:before {
   position: absolute;
+  top: -15px;
   content: "Empty Header";
 }
 h1[title],
