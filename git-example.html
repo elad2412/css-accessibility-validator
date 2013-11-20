@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' />
+	<meta http-equiv="X-UA-Compatible" content="chrome=1" />
+	<meta name="description" content="css-accessibility-validator : css accessibility validator" />
+
+	<link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+	<title>css-accessibility-validator</title>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<div id="header_wrap" class="outer">
+	<header class="inner">
+		<a id="forkme_banner" href="https://github.com/elad2412/css-accessibility-validator">View on GitHub</a>
+
+		<h1 id="project_title">css-accessibility-validator</h1>
+		<h2 id="project_tagline">css accessibility validator</h2>
+
+		<section id="downloads">
+			<a class="zip_download_link" href="https://github.com/elad2412/css-accessibility-validator/zipball/master">Download this project as a .zip file</a>
+			<a class="tar_download_link" href="https://github.com/elad2412/css-accessibility-validator/tarball/master">Download this project as a tar.gz file</a>
+		</section>
+	</header>
+</div>
+
+<!-- MAIN CONTENT -->
+
+<main>
+	<div class="examples-header">
+		<div class="container">
+			<h4>Examples:</h4>
+		</div>
+	</div>
+	<section class="error-bg">
+		<div class="container">
+			<h2 class="error-title">Error Validator</h2>
+			<article class="fc">
+				<h3>Image Validator</h3>
+				<ul class="list-items">
+					<li>
+						<figure>
+							<img src="http://farm8.staticflickr.com/7443/9733944130_bba200844f_m.jpg">
+							<figcaption class="error">missing alt</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="http://farm8.staticflickr.com/7297/9730692099_476b2e943e_m.jpg" alt="" title="">
+							<figcaption class="error">empty alt or title</figcaption>
+						</figure>
+					</li>
+					<li>
+						<figure>
+							<img src="http://farm6.staticflickr.com/5348/9733905010_f3c9c3a202_m.jpg" alt="Paint Shop">
+							<figcaption class="good">Good!</figcaption>
+						</figure>
+					</li>
+				</ul>
+			</article>
+			<article class="fc">
+				<h3>Links Validator</h3>
+				<p>Check for links with <b>no text</b>, <b>no ID(anchors)</b> or <b>title attribute</b></p>
+				<ul class="list-items">
+					<li>
+						<a href=""></a>
+					</li>
+					<li>
+						<a href="" title=""></a>
+					</li>
+				</ul>
+			</article>
+			<article class="fc">
+				<h3>Headers Validator</h3>
+				<p>Check for links with <b>no text</b>, <b>no ID(anchors)</b> or <b>title attribute</b></p>
+				<ul class="list-items">
+					<li>
+						<h3></h3>
+						<div class="error">h3 header with no text or title attribute</div>
+					</li>
+					<li>
+						<h3 title="H2 header">H2 header (test)</h3>
+						<div class="good">h3 header with text or title attribute</div>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+	<section class="warning-bg">
+		<div class="container">
+			<h2>Warning Validator</h2>
+			<article class="fc">
+				<h3>Form Validator</h3>
+				<p>Check Validation of input with no-placeholder</p>
+				<ul class="list-items break">
+					<li>
+						<input type="text"><br/>
+						<div class="error">input without placeholder</div>
+					</li>
+					<li>
+						<input type="text" placeholder="Enter your Name">
+						<div class="good">input with placeholder</div>
+					</li>
+					<li>
+						<label for="input-ref">label for input</label>
+						<input type="text"  id="input-ref">
+						<div class="good">label before the input with for attribute</div>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+	<section class="recommended-bg">
+		<div class="container">
+			<h2>Not Recommended</h2>
+			<article class="fc">
+				<h3>Iframe or Flash embedding</h3>
+				<p>Check existing of flash or iframe</p>
+				<ul class="list-items break">
+					<li>
+						<embed width="100" height="50"></embed>
+						<div class="error">flash tag</div>
+					</li>
+					<li>
+						<iframe width="100" height="50"></iframe>
+						<div class="error">iframe tag</div>
+					</li>
+				</ul>
+			</article>
+		</div>
+	</section>
+</main>
+
+
+<!-- FOOTER  -->
+<div id="footer_wrap" class="outer">
+	<footer class="inner">
+		<p class="copyright">css-accessibility-validator maintained by <a href="https://github.com/elad2412">elad2412</a></p>
+		<p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+	</footer>
+</div>
+
+
+
+</body>
+</html>

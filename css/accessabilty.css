@@ -1,3 +1,10 @@
+/**************************
+***************************
+@author Elad Shechter
+@category CSS
+@project CSS Accessibility Validator
+***************************
+**************************/
 /******CSS Accessibility Validator ******/
 .message,
 img:not([alt]):before,
