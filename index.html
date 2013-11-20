@@ -57,7 +57,7 @@
 	
 	<h3>Warning Level - At this level are things which may have accessibility errors.</h3>
 	<b>At this level we can found:</b><br>
-	1. Input text fields without placeholder or without sibling label tag(before) with the attribute "for" on it<br>
+	1. Input text fields without placeholder or without sibling label tag(before) with the attribute "for" on it.<br>
 	<span class="level2-color">The Warning will color in <b>orange outline</b>.</span><br><br>
 	
 	
@@ -68,111 +68,108 @@
 
 	<span class="level3-color">The Recommended will color in <b>blue outline</b>.</span><br><br>
 	</p>
-      <pre><code>$ cd your_repo_root/repo_name
-      $ git fetch origin
-      $ git checkout gh-pages
-      </code></pre>
-			<section class="error-bg">
-  			<div class="container">
-  				<h2 class="error-title">Error Validator</h2>
-  				<p>Error Accessibility Validation, are the most importent issues, that you need to put attetion</p>
-  				<article class="fc image-validator">
-  					<h3>Image Validator</h3>
-  					<p>Check if there are image tag with <b>missing Alt</b> or an <b>empty Alt</b></p>
-  					<ul class="list-items">
-  						<li>
-  							<figure>
-  								<img src="http://farm8.staticflickr.com/7443/9733944130_bba200844f_m.jpg">
-  								<figcaption class="error">missing alt</figcaption>
-  							</figure>
-  						</li>
-  						<li>
-  							<figure>
-  								<img src="http://farm8.staticflickr.com/7297/9730692099_476b2e943e_m.jpg" alt="" title="">
-  								<figcaption class="error">empty alt or title</figcaption>
-  							</figure>
-  						</li>
-  						<li>
-  							<figure>
-  								<img src="http://farm6.staticflickr.com/5348/9733905010_f3c9c3a202_m.jpg" alt="Paint Shop">
-  								<figcaption class="good">Good!</figcaption>
-  							</figure>
-  						</li>
-  					</ul>
-  				</article>
-  				<article class="fc">
-  					<h3>Links Validator</h3>
-  					<p>Check for links with <b>no text</b>, <b>no ID(anchors)</b> or <b>title attribute</b></p>
-  					<ul class="list-items">
-  						<li>
-  							<a href="" class="link-with-error-example"></a>
-  							<div class="error">Empty link tag - with no anchor(no ID) or title attribute or inner text</div>
-  						</li>
-  						<li>
-  							<a href="" title="this is a title" class="link-example"></a>
-  							<div class="good">Empty link tag - but as a title (Good!)</div>
-  						</li>
-  					</ul>
-  				</article>
-  				<article class="fc">
-  					<h3>Headers Validator</h3>
-  					<p>Check for empty header tag or header tag with no attribute title</p>
-  					<ul class="list-items">
-  						<li>
-  							<h3 class="test"></h3>
-  							<div class="error">h3 header with no text or title attribute</div>
-  						</li>
-  						<li>
-  							<h3 class="test">H2 header (test)</h3>
-  							<div class="good">h3 header with text or title attribute (Good!)</div>
-  						</li>
-  					</ul>
-  				</article>
-  			</div>
-  			</section>
-  			<section class="warning-bg">
-  			<div class="container">
-  				<h2>Warning Validator</h2>
-  				<article class="fc">
-  					<h3>Form Validator</h3>
-  					<p>Check Validation of input with no-placeholder</p>
-  					<ul class="list-items break">
-  						<li>
-  							<input type="text"><br/>
-  							<div class="error">input without placeholder</div>
-  						</li>
-  						<li>
-  							<input type="text" placeholder="Enter your Name">
-  							<div class="good">input with placeholder (Good!)</div>
-  						</li>
-  						<li>
-  							<label for="input-ref">label for input</label>
-  							<input type="text"  id="input-ref">
-  							<div class="good">label before the input with for attribute (Good!)</div>
-  						</li>
-  					</ul>
-  				</article>
-  			</div>
-			</section>
-			<section class="recommended-bg">
-  			<div class="container">
-  				<h2>Not Recommended HTML Tags</h2>
-  				<article class="fc">
-  					<h3>Iframe or Flash embedding</h3>
-  					<p>Check existing of flash or iframe</p>
-  					<ul class="list-items break">
-  						<li>
-  							<embed width="100" height="50"></embed>
-  							<div class="error">flash tag</div>
-  						</li>
-  						<li>
-  							<iframe width="100" height="50"></iframe>
-  							<div class="error">iframe tag</div>
-  						</li>
-  					</ul>
-  				</article>
-  			</div>
-			</section>
+	<h2><EXAMPLES:/h2>
+		<section class="error-bg">
+		  <div class="container">
+		  	<h2 class="error-title">Error Validator</h2>
+		  	<p>Error Accessibility Validation, are the most importent issues, that you need to put attetion</p>
+		  	<article class="fc image-validator">
+		  		<h3>Image Validator</h3>
+		  		<p>Check if there are image tag with <b>missing Alt</b> or an <b>empty Alt</b></p>
+		  		<ul class="list-items">
+		  			<li>
+		  				<figure>
+		  					<img src="http://farm8.staticflickr.com/7443/9733944130_bba200844f_m.jpg">
+		  					<figcaption class="error">missing alt</figcaption>
+		  				</figure>
+		  			</li>
+		  			<li>
+		  				<figure>
+		  					<img src="http://farm8.staticflickr.com/7297/9730692099_476b2e943e_m.jpg" alt="" title="">
+		  					<figcaption class="error">empty alt or title</figcaption>
+		  				</figure>
+		  			</li>
+		  			<li>
+		  				<figure>
+		  					<img src="http://farm6.staticflickr.com/5348/9733905010_f3c9c3a202_m.jpg" alt="Paint Shop">
+		  					<figcaption class="good">Good!</figcaption>
+		  				</figure>
+		  			</li>
+		  		</ul>
+		  	</article>
+		  	<article class="fc">
+		  		<h3>Links Validator</h3>
+		  		<p>Check for links with <b>no text</b>, <b>no ID(anchors)</b> or <b>title attribute</b></p>
+		  		<ul class="list-items">
+		  			<li>
+		  				<a href="" class="link-with-error-example"></a>
+		  				<div class="error">Empty link tag - with no anchor(no ID) or title attribute or inner text</div>
+		  			</li>
+		  			<li>
+		  				<a href="" title="this is a title" class="link-example"></a>
+		  				<div class="good">Empty link tag - but as a title (Good!)</div>
+		  			</li>
+		  		</ul>
+		  	</article>
+		  	<article class="fc">
+		  		<h3>Headers Validator</h3>
+		  		<p>Check for empty header tag or header tag with no attribute title</p>
+		  		<ul class="list-items">
+		  			<li>
+		  				<h3 class="test"></h3>
+		  				<div class="error">h3 header with no text or title attribute</div>
+		  			</li>
+		  			<li>
+		  				<h3 class="test">H2 header (test)</h3>
+		  				<div class="good">h3 header with text or title attribute (Good!)</div>
+		  			</li>
+		  		</ul>
+		  	</article>
+		  </div>
+		  </section>
+		  <section class="warning-bg">
+		  <div class="container">
+		  	<h2>Warning Validator</h2>
+		  	<article class="fc">
+		  		<h3>Form Validator</h3>
+		  		<p>Check Validation of input with no-placeholder</p>
+		  		<ul class="list-items break">
+		  			<li>
+		  				<input type="text"><br/>
+		  				<div class="error">input without placeholder</div>
+		  			</li>
+		  			<li>
+		  				<input type="text" placeholder="Enter your Name">
+		  				<div class="good">input with placeholder (Good!)</div>
+		  			</li>
+		  			<li>
+		  				<label for="input-ref">label for input</label>
+		  				<input type="text"  id="input-ref">
+		  				<div class="good">label before the input with for attribute (Good!)</div>
+		  			</li>
+		  		</ul>
+		  	</article>
+		  </div>
+		</section>
+		<section class="recommended-bg">
+		  <div class="container">
+		  	<h2>Not Recommended HTML Tags</h2>
+		  	<article class="fc">
+		  		<h3>Iframe or Flash embedding</h3>
+		  		<p>Check existing of flash or iframe</p>
+		  		<ul class="list-items break">
+		  			<li>
+		  				<embed width="100" height="50"></embed>
+		  				<div class="error">flash tag</div>
+		  			</li>
+		  			<li>
+		  				<iframe width="100" height="50"></iframe>
+		  				<div class="error">iframe tag</div>
+		  			</li>
+		  		</ul>
+		  	</article>
+		  </div>
+		</section>
 
 
         </section>
