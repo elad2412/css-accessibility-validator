@@ -1,3 +1,10 @@
+/**************************
+***************************
+@author Elad Shechter
+@category CSS
+@project CSS Accessibility Validator
+***************************
+**************************/
 /******CSS Accessibility Validator ******/
 .message,
 img:not([alt]):before,
@@ -19,7 +26,7 @@ input[type="url"]:not([placeholder]):before,
 input[type="search"]:not([placeholder]):before,
 input[type="tel"]:not([placeholder]):before,
 textarea:not([placeholder]):before {
-  width: 150px;
+  width: 190px;
   padding: 10px;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -74,7 +81,7 @@ a:empty {
 }
 a:empty:after {
   position: absolute;
-  right: -160px;
+  right: -200px;
   top: -20px;
   content: "Empty link tag - with no anchor(no ID) or title attribute or inner text";
 }
