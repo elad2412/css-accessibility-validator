@@ -4,3 +4,6 @@ article li{list-style:none; margin:0; padding:0;}
 
 .list-items li{float:left;margin:0 20px 20px 0;}
 .list-items.break li{float:none;}
+
+
+.image-validator li{width:30%;margin:0 1.5%;}
