@@ -220,7 +220,7 @@ object:before {
   animation: accessibility-test 0.3s linear 0s infinite alternate;
   /* Safari and Chrome: */
   -webkit-animation: accessibility-test 0.3s linear 0s infinite alternate;
-  outline-color: #ff0000;
+  outline-color: #0000ff;
 }
 /*****Css Animation*****/
 .animation1 {
