@@ -225,7 +225,7 @@ object:before {
 }
 @keyframes accessibility-test {
   from {
-    opacity: 0.9;
+    opacity: 0.8;
   }
   to {
     opacity: 1;
@@ -233,7 +233,7 @@ object:before {
 }
 @-webkit-keyframes accessibility-test {
   from {
-    opacity: 0.9;
+    opacity: 0.8;
   }
   to {
     opacity: 1;
