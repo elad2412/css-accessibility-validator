@@ -1,4 +1,13 @@
-article{clear:both;}
+
+.error{color:#8A0000;}
+.good{color:#007105;}
+
+figcaption,
+.error,
+.good{font-weight:bold; text-transform:capitalize;}
+
+
+article{clear:both; padding-bottom:50px;}
 article ul,
 article li{list-style:none; margin:0; padding:0;}
 
@@ -7,3 +16,5 @@ article li{list-style:none; margin:0; padding:0;}
 
 
 .image-validator li{width:30%;margin:0 1.5%;}
+
+#main-content section{clear:both;}
