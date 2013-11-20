@@ -1,4 +1,4 @@
-# Parallax.js
+# Accessibility.css
 
 **Accessibility CSS Validator, is a tool for errors and warnings on web accessibility.**
 
