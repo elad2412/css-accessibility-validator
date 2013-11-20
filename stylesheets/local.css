@@ -14,7 +14,7 @@ figcaption,
 .good{font-weight:bold; text-transform:capitalize;}
 
 
-article{clear:both; padding-bottom:50px;}
+article{clear:both;}
 article ul,
 article li{list-style:none; margin:0; padding:0;}
 
