@@ -5,114 +5,23 @@
 @project CSS Accessibility Validator
 ***************************
 **************************/
-@error-color:red;
-@warning-color:orange;
-@not-recommended:blue;
 
-.message{width:190px; padding:10px; -moz-box-sizing:border-box; box-sizing:border-box; border:solid 1px #ddd; border-radius:10px; background-color:rgba(245,245,245,0.8); color:#000;}
+/*****Common*****/
+@import "less/config.less";
+@import "less/layout.less";
+
+/*****Validations*****/
 /**Errors**/
-img{
-	/****missing alt****/
-	&:not([alt]){
-		.animation1; outline-color:@error-color;
-		&:before:extend(.message){position:absolute; content:"Missing Alt/Title";}
-	}
-	/****empty alt or title****/
-	&[alt=""],
-	&[title=""]{
-		.animation1; outline-color:@error-color;
-		&:before:extend(.message){position:absolute; content:"Empty Alt/Title";}
-	}
-}
-/****Empty a tag with no ID****/
-a:empty{
-	.animation1; outline-color:@error-color; min-width:10px; min-height:10px; display:inline-block; position:relative;
-	&:after:extend(.message){position:absolute; right:-200px; top:-20px; content:"Empty link tag - with no anchor(no ID) or title attribute or inner text";}
-}
-a[id]:empty,
-a[title]:empty{
-	.remove-error;
-	&:after:extend(.message){.remove-error; content:""; border-width:0; padding:0;}
-}
-
-
-/****Empty Headers****/
-h1:empty,
-h2:empty,
-h3:empty,
-h4:empty,
-h5:empty,
-h6:empty{
-	.animation1; outline-color:@error-color; min-height:3px; position:relative;
-	&:before:extend(.message){position:absolute; top:-15px; content:"Empty Header";}
-}
-
-h1[title],
-h2[title],
-h3[title],
-h4[title],
-h5[title],
-h6[title]{
-	.remove-error;
-	&:before{.remove-error; content:"";}
-}
-
+@import "less/validation/images.less";
+@import "less/validation/anchor.less";
+@import "less/validation/headers.less";
 /**Warnings**/
-input[type="text"],
-input[type="password"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-textarea{
-	&:not([placeholder]){
-		.animation1; outline-color:@warning-color;
-		&:before:extend(.message){position:absolute; content:"Recommended to add placeholder";}
-	}
-}
-
-label[for]{
-	+ input:not([placeholder]),
-	+ textarea:not([placeholder]){.remove-error;}
-}
+@import "less/validation/form.less";
+/**Recommended**/
+@import "less/validation/html-tags.less";
+@import "less/validation/inline-styles.less";
 
 
-/**Not Recommended**/
-iframe,
-embed,
-object{
-	.animation1; outline-color:@not-recommended;
-	&:before{position:absolute; content:"IFRAME/Flash content can make accessbility issues";}
-}
-
-*[style]{.animation1; outline-color:@not-recommended;}
 
 
-/*****Css Animation*****/
-.animation1{
-	outline:solid 3px red;
-	opacity:0.2;
-	animation: accessibility-test 0.3s linear 0s infinite alternate;
-	/* Safari and Chrome: */
-	-webkit-animation: accessibility-test 0.3s linear 0s infinite alternate;
-}
-@keyframes accessibility-test
-{
-	from {opacity:0.7;}
-	to {opacity:1;}
-}
 
-@-webkit-keyframes accessibility-test
-{
-	from {opacity:0.7;}
-	to {opacity:1;}
-}
-
-.no-animation{
-	animation:none;
-	-webkit-animation:none;
-}
-
-.remove-error{
-	.no-animation; min-width:0; min-height:0; display:inline; outline-width:0; opacity:1;
-}

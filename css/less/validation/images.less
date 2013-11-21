@@ -1,0 +1,13 @@
+img{
+	/****missing alt****/
+	&:not([alt]){
+		.animation1; outline-color:@error-color;
+		&:before:extend(.message){position:absolute; content:"Missing Alt/Title";}
+	}
+	/****empty alt or title****/
+	&[alt=""],
+	&[title=""]{
+		.animation1; outline-color:@error-color;
+		&:before:extend(.message){position:absolute; content:"Empty Alt/Title";}
+	}
+}

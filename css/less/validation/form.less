@@ -1,0 +1,18 @@
+/***Form Validation***/
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+textarea{
+	&:not([placeholder]){
+		.animation1; outline-color:@warning-color;
+		&:before:extend(.message){position:absolute; content:"Recommended to add placeholder";}
+	}
+}
+
+label[for]{
+	+ input:not([placeholder]),
+	+ textarea:not([placeholder]){.remove-error;}
+}
