@@ -18,8 +18,8 @@ notice: the tool check only stuff we can catch via CSS only.
 ###Error Level - This is the most critical level of accessibility.
 **At this level we can found:**
 1. Alternative texts for images
-2. Empty Tags Links, without ID or a title attribute
-3. Empty Headers, or empty headers without a title attribute
+2. 2. Empty Tags Links, without ID or a title attribute
+3. 3. Empty Headers, or empty headers without a title attribute
 
 The Error will color in red outline.
 
@@ -32,8 +32,8 @@ The Warning will color in orange outline.
 ###Recommended Level - This is the less critical level of accessibility.
 **At this level we can found un-recommended HTML tags as: iframe , flash tags(embed or object)**
 1. Flash HTML isn't accessibility.
-2. Ifames are half accessibility, if there is a form inside them for example, you can go in but you can't get out of them.
-3. Inline Styles - can make issues to screen readers.
+2. 2. Ifames are half accessibility, if there is a form inside them for example, you can go in but you can't get out of them.
+3. 3. Inline Styles - can make issues to screen readers.
 
 The Recommended will color in blue outline.
 
