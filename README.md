@@ -52,7 +52,7 @@ The Recommended will color in blue outline.
 
 #####Empty Link Tag - with no anchor(ID) or no title attribute or no inner text
 ```html
-	<a href="http://elad2412.github.io/css-accessibility-validator/index.html"></a>
+	<a href="http://elad2412.github.io/css-accessibility-validator/"></a>
 ```
 
 ###Header with no text or title attribute
@@ -100,8 +100,8 @@ The Recommended will color in blue outline.
 
 Licensed under [MIT][mit]. Enjoy.
 
-[demo]: http://elad2412.github.io/css-accessibility-validator/index.html#examples
-[You can see Live Example in our site]: http://elad2412.github.io/css-accessibility-validator/index.html#examples
+[demo]: http://elad2412.github.io/css-accessibility-validator/#examples
+[You can see Live Example in our site]: http://elad2412.github.io/css-accessibility-validator/#examples
 [coderwall]: https://coderwall.com/elad2412
 [codepen]: http://codepen.io/elad2412/
 [css-masters-group]: https://www.facebook.com/groups/css.master/
