@@ -87,14 +87,23 @@ http://elad2412.github.io/css-accessibility-validator/index.html#examples
 2. Internet Explorer from version 10
 
 ## Author
+Elad Shechter, You cand find me in this social groups.
+[coderwall], [codepen], [css-masters-group], [twitter], [instagram]
 
-Elad Shechter: [twitter]
+** Forum Groups: **
+**International Facebook Group(Israel only)**: [css-masters-group]
+**Local Facebook Group(Israel only)**: [css-masters-israel-group]
 
 ## License
 
 Licensed under [MIT][mit]. Enjoy.
 
 [demo]: http://elad2412.github.io/css-accessibility-validator/index.html#examples
+[coderwall]: https://coderwall.com/elad2412
+[codepen]: http://codepen.io/elad2412/
+[css-masters-group]: https://www.facebook.com/groups/css.master/
+[css-masters-israel-group]: https://www.facebook.com/groups/css.masters.israel/
 [twitter]: https://twitter.com/eladsc
+[instagram]: http://instagram.com/elad_2412
 [mit]: http://www.opensource.org/licenses/mit-license.php
 
