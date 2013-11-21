@@ -39,7 +39,6 @@ The Recommended will color in blue outline.
 You can see Live Example in our site:
 http://elad2412.github.io/css-accessibility-validator/index.html#examples
 
-**This are all Error Examples**
 ###Image Tag Missing Alt
 ```html
 	<img src="http://farm8.staticflickr.com/7443/9733944130_bba200844f_m.jpg">
@@ -50,7 +49,7 @@ http://elad2412.github.io/css-accessibility-validator/index.html#examples
 	<img src="http://farm8.staticflickr.com/7443/9733944130_bba200844f_m.jpg" alt="">
 ```
 
-###>Empty Link Tag - with no anchor(ID) or no title attribute or no inner text
+###Empty Link Tag - with no anchor(ID) or no title attribute or no inner text
 ```html
 	<a href="http://elad2412.github.io/css-accessibility-validator/index.html"></a>
 ```
@@ -90,7 +89,7 @@ http://elad2412.github.io/css-accessibility-validator/index.html#examples
 **Elad Shechter**, You cand fin me in this social groups.
 [coderwall], [codepen], [twitter], [instagram]
 
-** Forum Groups: **
+**Forum Groups:**
 **International Facebook Group(Israel only)**: [css-masters-group]
 **Local Facebook Group(Israel only)**: [css-masters-israel-group]
 
