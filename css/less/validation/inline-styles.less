@@ -1,2 +1,5 @@
 /*un-recommended Inline Styles*/
-*[style]{.animation1; outline-color:@not-recommended;}
+*[style]{
+	.animation1; outline-color:@not-recommended;
+	&:before:extend(.message){position:absolute; content:"Inline Styles!";}
+}

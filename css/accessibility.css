@@ -25,7 +25,8 @@ input[type="email"]:not([placeholder]):before,
 input[type="url"]:not([placeholder]):before,
 input[type="search"]:not([placeholder]):before,
 input[type="tel"]:not([placeholder]):before,
-textarea:not([placeholder]):before {
+textarea:not([placeholder]):before,
+*[style]:before {
   width: 190px;
   padding: 10px;
   -moz-box-sizing: border-box;
@@ -263,4 +264,8 @@ object:before {
   /* Safari and Chrome: */
   -webkit-animation: accessibility-test 0.3s linear 0s infinite alternate;
   outline-color: #0000ff;
+}
+*[style]:before {
+  position: absolute;
+  content: "Inline Styles!";
 }
