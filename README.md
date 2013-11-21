@@ -87,7 +87,7 @@ http://elad2412.github.io/css-accessibility-validator/index.html#examples
 2. Internet Explorer from version 10
 
 ## Author
-**Elad Shechter**, You cand find me in this social groups.
+**Elad Shechter**, You cand fin me in this social groups.
 [coderwall], [codepen], [twitter], [instagram]
 
 ** Forum Groups: **
