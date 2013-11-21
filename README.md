@@ -17,6 +17,7 @@ notice: the tool check only stuff we can catch via CSS only.
 ##The Validation Levels
 ###Error Level - This is the most critical level of accessibility.
 **At this level we can found:**
+
 1. Alternative texts for images
 2. Empty Tags Links, without ID or a title attribute
 3. Empty Headers, or empty headers without a title attribute
