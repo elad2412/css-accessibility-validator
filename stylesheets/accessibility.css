@@ -5,6 +5,7 @@
 @project CSS Accessibility Validator
 ***************************
 **************************/
+/*****Common*****/
 .message,
 img:not([alt]):before,
 img[alt=""]:before,
@@ -24,7 +25,8 @@ input[type="email"]:not([placeholder]):before,
 input[type="url"]:not([placeholder]):before,
 input[type="search"]:not([placeholder]):before,
 input[type="tel"]:not([placeholder]):before,
-textarea:not([placeholder]):before {
+textarea:not([placeholder]):before,
+*[style]:before {
   width: 190px;
   padding: 10px;
   -moz-box-sizing: border-box;
@@ -34,6 +36,44 @@ textarea:not([placeholder]):before {
   background-color: rgba(245, 245, 245, 0.8);
   color: #000;
 }
+/*****Css Animation*****/
+.animation1 {
+  outline: solid 3px red;
+  opacity: 0.2;
+  animation: accessibility-test 0.3s linear 0s infinite alternate;
+  /* Safari and Chrome: */
+  -webkit-animation: accessibility-test 0.3s linear 0s infinite alternate;
+}
+@keyframes accessibility-test {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes accessibility-test {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.no-animation {
+  animation: none;
+  -webkit-animation: none;
+}
+.remove-error {
+  animation: none;
+  -webkit-animation: none;
+  min-width: 0;
+  min-height: 0;
+  display: inline;
+  outline-width: 0;
+  opacity: 1;
+}
+/*****Validations*****/
 /**Errors**/
 img {
   /****missing alt****/
@@ -163,6 +203,7 @@ h6[title]:before {
   content: "";
 }
 /**Warnings**/
+/***Form Validation***/
 input[type="text"]:not([placeholder]),
 input[type="password"]:not([placeholder]),
 input[type="email"]:not([placeholder]),
@@ -197,7 +238,8 @@ label[for] + textarea:not([placeholder]) {
   outline-width: 0;
   opacity: 1;
 }
-/**Not Recommended**/
+/**Recommended**/
+/*un-recommended HTML Tags*/
 iframe,
 embed,
 object {
@@ -214,6 +256,7 @@ object:before {
   position: absolute;
   content: "IFRAME/Flash content can make accessbility issues";
 }
+/*un-recommended Inline Styles*/
 *[style] {
   outline: solid 3px red;
   opacity: 0.2;
@@ -222,40 +265,7 @@ object:before {
   -webkit-animation: accessibility-test 0.3s linear 0s infinite alternate;
   outline-color: #0000ff;
 }
-/*****Css Animation*****/
-.animation1 {
-  outline: solid 3px red;
-  opacity: 0.2;
-  animation: accessibility-test 0.3s linear 0s infinite alternate;
-  /* Safari and Chrome: */
-  -webkit-animation: accessibility-test 0.3s linear 0s infinite alternate;
-}
-@keyframes accessibility-test {
-  from {
-    opacity: 0.7;
-  }
-  to {
-    opacity: 1;
-  }
-}
-@-webkit-keyframes accessibility-test {
-  from {
-    opacity: 0.7;
-  }
-  to {
-    opacity: 1;
-  }
-}
-.no-animation {
-  animation: none;
-  -webkit-animation: none;
-}
-.remove-error {
-  animation: none;
-  -webkit-animation: none;
-  min-width: 0;
-  min-height: 0;
-  display: inline;
-  outline-width: 0;
-  opacity: 1;
+*[style]:before {
+  position: absolute;
+  content: "Inline Styles!";
 }
