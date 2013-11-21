@@ -17,7 +17,7 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <title>CSS Accessibility Validator by elad2412</title>
+    <title>Css Accessibility Validator</title>
   </head>
 
   <body>
@@ -35,11 +35,11 @@
         <p>
         <b>Accessibility CSS Validator, is a tool for finding HTML accessibility errors and warnings on web pages via advanced capabilities of CSS selectors.*</b>
 	<h2>How To Install CSS Accessibility Validator?</h2>
-	<p>Very easy, just <a href="https://raw.github.com/elad2412/css-accessibility-validator/master/css/accessibility.css">download this CSS accessability.css file</a>, and add it to your own project, and you finish.<br>
+	<p>Very easy, just add the following line of code to your head element, and your good to go!<br>
 		Refresh your page, and now you can see all the issues that the CSS Accessibility Validator finds.
 		
 		<pre><code>
-			<div class="ace_line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="ace_meta ace_tag ace_punctuation ace_begin">&lt;</span><span class="ace_meta ace_tag ace_name">link</span>&nbsp;<span class="ace_entity ace_other ace_attribute-name">rel</span><span class="ace_keyword ace_operator ace_separator">=</span><span class="ace_string">"stylesheet"</span>&nbsp;<span class="ace_entity ace_other ace_attribute-name">type</span><span class="ace_keyword ace_operator ace_separator">=</span><span class="ace_string">"text/css"</span>&nbsp;<span class="ace_entity ace_other ace_attribute-name">href</span><span class="ace_keyword ace_operator ace_separator">=</span><span class="ace_string">"css/accessibility.css"</span>&nbsp;<span class="ace_entity ace_other ace_attribute-name">media</span><span class="ace_keyword ace_operator ace_separator">=</span><span class="ace_string">"screen"</span>&nbsp;<span class="ace_meta ace_tag ace_punctuation ace_end">/&gt;</span></div>
+			<div class="ace_line">&nbsp;&nbsp;&nbsp;&nbsp;<span class="ace_meta ace_tag ace_punctuation ace_begin">&lt;</span><span class="ace_meta ace_tag ace_name">link</span>&nbsp;<span class="ace_entity ace_other ace_attribute-name">rel</span><span class="ace_keyword ace_operator ace_separator">=</span><span class="ace_string">"stylesheet"</span>&nbsp;<span class="ace_entity ace_other ace_attribute-name">type</span><span class="ace_keyword ace_operator ace_separator">=</span><span class="ace_string">"text/css"</span>&nbsp;<span class="ace_entity ace_other ace_attribute-name">href</span><span class="ace_keyword ace_operator ace_separator">=</span><span class="ace_string">"https://raw.github.com/elad2412/css-accessibility-validator/master/css/accessibility.css"</span>&nbsp;<span class="ace_entity ace_other ace_attribute-name">media</span><span class="ace_keyword ace_operator ace_separator">=</span><span class="ace_string">"screen"</span>&nbsp;<span class="ace_meta ace_tag ace_punctuation ace_end">/&gt;</span></div>
 		</code></pre>
 		
 	</p>
@@ -50,22 +50,22 @@
 	
 	<h2>Validation Levels</h2>
 	<h3>Error Level - This is the most critical level of accessibility.</h3>
-	<b>At this level we can found:</b><br>
+	<b>At this level we can find:</b><br>
 	1. Alternative texts for images.<br>
 	2. Empty Tags Links, without ID or a title attribute.<br>
 	3. Empty Headers, or empty headers without a title attribute.<br>
-	<span class="level1-color">The Error will color in <b>red outline</b>.</span><br><br>
+	<span class="level1-color">The Error will be marked with <b>red outline</b>.</span><br><br>
 	
 	<h3>Warning Level - At this level are things which may have accessibility errors.</h3>
-	<b>At this level we can found:</b><br>
+	<b>At this level we can find:</b><br>
 	1. Input text fields without placeholder or without sibling label tag(before) with the attribute "for" on it.<br>
-	<span class="level2-color">The Warning will color in <b>orange outline</b>.</span><br><br>
+	<span class="level2-color">The Warning will be marked with <b>orange outline</b>.</span><br><br>
 	
 	
 	<h3>Recommended Level - This is the less critical level of accessibility.</h3>
-	<b>At this level we can found un-recommended HTML tags as: iframe , flash tags(embed or object)</b><br>
+	<b>At this level we can find un-recommended HTML tags as: iframe , flash tags(embed or object)</b><br>
 	1.Flash HTML isn't accessibility.<br>
-	2.Iframes are half accessibility, if there is a form inside them for example, you can go in but you can't get out of them.<br>
+	2.Iframes are half accessibility, if there is a form inside them, for example you can go in but you can't get out of them using keyboard only.<br>
 	3.Inline Styles - can make issues to screen readers.<br>
 
 	<span class="level3-color">The Recommended will color in <b>blue outline</b>.</span><br><br>
@@ -75,7 +75,7 @@
 		<section class="error-bg">
 		  <div class="container">
 		  	<h2 class="error-title">Error Validator</h2>
-		  	<p>Error Accessibility Validation, are the most importent issues, that you need to put attetion.</p>
+		  	<p>Error Accessibility Validation, are the most importent issues, that you need to put attention.</p>
 		  	<article class="fc image-validator">
 		  		<h3>Image Validator</h3>
 		  		<p>Check if there are image tag with <b>missing Alt</b> or an <b>empty Alt</b>.</p>
@@ -116,7 +116,7 @@
 		  	</article>
 		  	<article class="fc">
 		  		<h3>Headers Validator</h3>
-		  		<p>Check for empty header tag or header tag with no attribute title.</p>
+		  		<p>Check for empty header tag with no attribute title.</p>
 		  		<ul class="list-items">
 		  			<li>
 		  				<h3 class="test"></h3>
