@@ -1,6 +1,6 @@
 # Accessibility CSS Validator
 
-**Accessibility CSS Validator, is a tool for finding HTML accessibility errors and warnings on web pages via advanced capabilities of CSS.**
+**Accessibility CSS Validator, is a tool for finding HTML accessibility errors and warnings on web pages via advanced capabilities of CSS selectors.**
 
 Check out this **[demo][demo]** to see it in action!
 
