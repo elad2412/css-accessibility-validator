@@ -124,6 +124,7 @@ a:empty:after {
   top: -20px;
   content: "Empty link tag - with no anchor(no ID) or title attribute or inner text";
 }
+/*override error, if there is an ID or a title attribute*/
 a[id]:empty,
 a[title]:empty {
   animation: none;
