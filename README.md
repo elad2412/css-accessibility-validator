@@ -16,7 +16,7 @@ notice: the tool check only stuff we can catch via CSS only.
 
 ##The Validation Levels
 ###Error Level - This is the most critical level of accessibility.
-**At this level we can found:**
+
 1. Alternative texts for images
 2. Empty Tags Links, without ID or a title attribute
 3. Empty Headers, or empty headers without a title attribute
@@ -24,7 +24,7 @@ notice: the tool check only stuff we can catch via CSS only.
 The Error will color in red outline.
 
 ###Warning Level - At this level are things which may have accessibility errors.
-**At this level we can found:**
+
 1. Input text fields without placeholder or without sibling label tag(before) with the attribute "for" on it.
 
 The Warning will color in orange outline.
