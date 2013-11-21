@@ -18,30 +18,28 @@ notice: the tool check only stuff we can catch via CSS only.
 ###Error Level - This is the most critical level of accessibility.
 **At this level we can found:**
 
-1. Alternative texts for images
-2. Empty Tags Links, without ID or a title attribute
-3. Empty Headers, or empty headers without a title attribute
+1 Alternative texts for images
+2 Empty Tags Links, without ID or a title attribute
+3 Empty Headers, or empty headers without a title attribute
 
 The Error will color in red outline.
 
 ###Warning Level - At this level are things which may have accessibility errors.
 **At this level we can found:**
-1. Input text fields without placeholder or without sibling label tag(before) with the attribute "for" on it.
+1 Input text fields without placeholder or without sibling label tag(before) with the attribute "for" on it.
 
 The Warning will color in orange outline.
 
 ###Recommended Level - This is the less critical level of accessibility.
 **At this level we can found un-recommended HTML tags as: iframe , flash tags(embed or object)**
-1. Flash HTML isn't accessibility.
-2. Ifames are half accessibility, if there is a form inside them for example, you can go in but you can't get out of them.
-3. Inline Styles - can make issues to screen readers.
+1 Flash HTML isn't accessibility.
+2 Ifames are half accessibility, if there is a form inside them for example, you can go in but you can't get out of them.
+3 Inline Styles - can make issues to screen readers.
 
 The Recommended will color in blue outline.
 
 ##Examples
-
-You can see Live Example in our site:
-http://elad2412.github.io/css-accessibility-validator/index.html#examples
+[You can see Live Example in our site]
 
 #####Image Tag Missing Alt
 ```html
@@ -104,6 +102,7 @@ http://elad2412.github.io/css-accessibility-validator/index.html#examples
 Licensed under [MIT][mit]. Enjoy.
 
 [demo]: http://elad2412.github.io/css-accessibility-validator/index.html#examples
+[You can see Live Example in our site]: http://elad2412.github.io/css-accessibility-validator/index.html#examples
 [coderwall]: https://coderwall.com/elad2412
 [codepen]: http://codepen.io/elad2412/
 [css-masters-group]: https://www.facebook.com/groups/css.master/
