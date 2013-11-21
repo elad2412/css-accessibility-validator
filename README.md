@@ -50,7 +50,7 @@ http://elad2412.github.io/css-accessibility-validator/index.html#examples
 	<img src="http://farm8.staticflickr.com/7443/9733944130_bba200844f_m.jpg" alt="">
 ```
 
-###>Empty Link Tag - with no anchor(no ID) or title attribute or inner text
+###>Empty Link Tag - with no anchor(ID) or no title attribute or no inner text
 ```html
 	<a href="http://elad2412.github.io/css-accessibility-validator/index.html"></a>
 ```
