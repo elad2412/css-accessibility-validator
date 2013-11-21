@@ -32,7 +32,7 @@ The Warning will color in orange outline.
 ###Recommended Level - This is the less critical level of accessibility.
 ######At this level we can found un-recommended HTML tags as: iframe , flash tags(embed or object)
 1. Flash HTML isn't accessibility.
-2. Ifames are half accessibility, if there is a form inside them for example, you can go in but you can't get out of them.
+2. Iframes are half accessibility, if there is a form inside them for example, you can go in but you can't get out of them.
 3. Inline Styles - can make issues to screen readers.
 
 The Recommended will color in blue outline.
