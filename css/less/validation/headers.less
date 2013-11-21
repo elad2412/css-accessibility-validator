@@ -1,20 +1,11 @@
 /****Empty Headers****/
-h1:empty,
-h2:empty,
-h3:empty,
-h4:empty,
-h5:empty,
-h6:empty{
-	.animation1; outline-color:@error-color; min-height:3px; position:relative;
-	&:before:extend(.message){position:absolute; top:-15px; content:"Empty Header";}
-}
-
-h1[title],
-h2[title],
-h3[title],
-h4[title],
-h5[title],
-h6[title]{
-	.remove-error;
-	&:before{.remove-error; content:"";}
+h1,h2,h3,h4,h5,h6{
+	&:empty{
+		.animation1; outline-color:@error-color; min-height:3px; position:relative;
+		&:before:extend(.message){position:absolute; top:-15px; content:"Empty Header";}
+	}
+	&[title]{
+		.remove-error;
+		&:before{.remove-error; content:"";}
+	}
 }
