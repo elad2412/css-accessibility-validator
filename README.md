@@ -90,7 +90,9 @@ http://elad2412.github.io/css-accessibility-validator/index.html#examples
 [coderwall], [codepen], [twitter], [instagram]
 
 **Forum Groups:**
+
 **International Facebook Group(Israel only)**: [css-masters-group]
+
 **Local Facebook Group(Israel only)**: [css-masters-israel-group]
 
 ## License
