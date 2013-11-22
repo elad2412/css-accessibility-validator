@@ -87,14 +87,14 @@ The Recommended will color in blue outline.
 2. Internet Explorer from version 10
 
 ## Author
-**Elad Shechter**, You cand fin me in this social groups.
+**Elad Shechter**, You cand find me in this social groups.
 [coderwall], [codepen], [twitter], [instagram]
 
 **Forum Groups:**
 
-**International Facebook Group(Israel only)**: [css-masters-group]
+**International Facebook Group**: [css-masters-group]
 
-**Local Facebook Group(Israel only)**: [css-masters-israel-group]
+**Israeli Facebook Group**: [css-masters-israel-group]
 
 ## License
 
